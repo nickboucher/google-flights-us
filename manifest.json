@@ -1,0 +1,24 @@
+{
+  "name": "Google Flights US",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Always set the location to the USA on Google flights, regardless of the user;s current location. Useful for pricing flights in USD while traveling.",
+  "homepage_url": "https://nicholas.bio",
+  "icons": {
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "background": {
+    "scripts": [
+      "src/bg/background.js"
+    ],
+    "persistent": true
+  },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "webNavigation",
+    "*://www.google.com/flights/*",
+    "*://www.google.com/travel/flights/*"
+  ]
+}
